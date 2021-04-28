@@ -40,11 +40,7 @@ const BlogPostTemplate = ({ data, location }) => {
           <div class="license">
             <div class="license-title">{post.frontmatter.title}</div>
             <div class="license-link">
-<<<<<<< HEAD
               <a href={canonicalUrl} rel="external nofollow noopenner" target="_blank">{decodeURI(canonicalUrl)}</a>
-=======
-              <a href={canonicalUrl} rel="external nofollow noopenner" target="_blank">{canonicalUrl}</a>
->>>>>>> a1f664216070b377e73fceadaef1d48c154c0399
             </div>
             <div class="license-meta">
               <div class="license-meta-item">
