@@ -5,11 +5,13 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
+import "../ccblock.css"
+
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const { previous, next } = data
-  const canonicalUrl = data.site.siteMetadata.siteURL + location.pathname
+  const canonicalUrl = data.site.siteMetadata.siteUrl + location.pathname
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -30,7 +32,7 @@ const BlogPostTemplate = ({ data, location }) => {
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="articleBody"
         />
-        <hr />
+        
         <footer>
           <div class="license">
             <div class="license-title">{post.frontmatter.title}</div>
@@ -56,6 +58,7 @@ const BlogPostTemplate = ({ data, location }) => {
             <div>转载或引用本文时请遵守许可协议，注明出处、不得用于商业用途！</div>
           </div>
         </footer>
+        <hr />
       </article>
       <nav className="blog-post-nav">
         <ul

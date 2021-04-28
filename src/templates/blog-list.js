@@ -60,7 +60,7 @@ const BlogList = ({ data, location, pageContext }) => {
             <div style={{display: "flex", alignItems: "center", justifyContent: "space-between"}}>
                 {/* previousPageLink and nextPageLink were added by the plugin */}
                 <Link to={`${(pageContext.currentPage - 1) <= 1 ? '/' : ('/blog/'+(pageContext.currentPage - 1))}`}>Previous</Link>
-                <p>{pageContext.currentPage}</p>
+                <p style={{margin: 0}}>{pageContext.currentPage}</p>
                 {
                     pageContext.numPages <= pageContext.currentPage ? <Link></Link> : <Link to={`/blog/${pageContext.currentPage + 1}`}>Next</Link>
                 }

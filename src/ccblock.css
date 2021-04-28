@@ -1,0 +1,20 @@
+.license {
+  width: 100%;
+  background-color: #eee;
+  box-sizing: border-box;
+  padding: 10px;
+}
+.license .license-link {
+  font-size: 12px;
+}
+.license .license-meta {
+  display: flex;
+  margin-top: 10px;
+}
+.license .license-meta .license-meta-item + .license-meta-item {
+  margin-left: 20px;
+}
+.license .license-tips {
+  margin-top: 10px;
+  font-weight: 700;
+}
