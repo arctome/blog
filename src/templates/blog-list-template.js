@@ -61,8 +61,8 @@ const BlogIndex = ({ data, location, pageContext }) => {
             </ol>
             <div>
                 {/* previousPageLink and nextPageLink were added by the plugin */}
-                <Link to={pageContext.previousPagePath}>Previous</Link>
-                <Link to={pageContext.nextPagePath}>Next</Link>
+                <Link to={`${(pageContext.currentPage - 1) <= 1 ? '/' : ('/blog/'+(pageContext.currentPage - 1))}`}>Previous</Link>
+                <Link to={`/blog/${pageContext.currentPage + 1}`}>Next</Link>
             </div>
         </Layout>
     )
@@ -97,28 +97,28 @@ export default BlogIndex
 //     }
 // `
 export const pageQuery = graphql`
-    query($skip: Int!, $limit: Int!) {
-        site {
-            siteMetadata {
-                title
-            }
+  query blogListQuery($skip: Int!, $limit: Int!) {
+    site {
+        siteMetadata {
+            title
         }
-        allMarkdownRemark(
-            sort: { fields: [frontmatter___date], order: DESC }
-            skip: $skip
-            limit: $limit
-        ) {
-            nodes {
-                excerpt
-                fields {
-                    slug
-                }
-                frontmatter {
-                    date(formatString: "MMMM DD, YYYY")
-                    title
-                    description
-                }
+    }
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      limit: $limit
+      skip: $skip
+    ) {
+        nodes {
+            excerpt
+            fields {
+                slug
+            }
+            frontmatter {
+                date(formatString: "MMMM DD, YYYY")
+                title
+                description
             }
         }
     }
+  }
 `
