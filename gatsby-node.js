@@ -1,5 +1,6 @@
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
+// const { paginate, createPagePerItem } = require('gatsby-awesome-pagination')
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions
@@ -34,7 +35,24 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     return
   }
 
+  // Create blog-list pages
   const posts = result.data.allMarkdownRemark.nodes
+
+  // paginate({
+  //   createPage, // The Gatsby `createPage` function
+  //   items: posts, // An array of objects
+  //   itemsPerPage: 10, // How many items you want per page
+  //   pathPrefix: '/blog', // Creates pages like `/blog`, `/blog/2`, etc
+  //   component: blogIndex, // Just like `createPage()`
+  // })
+
+  // createPagePerItem({
+  //   createPage,
+  //   items: posts,
+  //   component: blogPost,
+  //   itemToPath: "node.field.slug",
+  //   itemToId: "node.id"
+  // });
 
   // Create blog posts pages
   // But only if there's at least one markdown file found at "content/blog" (defined in gatsby-config.js)
@@ -52,6 +70,20 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
           id: post.id,
           previousPostId,
           nextPostId,
+        },
+      })
+    })
+    const postsPerPage = 10
+    const numPages = Math.ceil(posts.length / postsPerPage)
+    Array.from({ length: numPages }).forEach((_, i) => {
+      createPage({
+        path: i === 0 ? `/` : `/blog/${i + 1}`,
+        component: path.resolve("./src/templates/blog-list.js"),
+        context: {
+          limit: postsPerPage,
+          skip: i * postsPerPage,
+          numPages,
+          currentPage: i + 1
         },
       })
     })
