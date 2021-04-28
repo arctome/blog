@@ -104,6 +104,7 @@ export const pageQuery = graphql`
         author {
           name
         }
+        siteUrl
       }
     }
     markdownRemark(id: { eq: $id }) {
