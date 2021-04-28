@@ -8,8 +8,6 @@ import { Disqus } from 'gatsby-plugin-disqus';
 
 import "../ccblock.css"
 
-import "../ccblock.css"
-
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -40,7 +38,7 @@ const BlogPostTemplate = ({ data, location }) => {
           <div class="license">
             <div class="license-title">{post.frontmatter.title}</div>
             <div class="license-link">
-              <a href={canonicalUrl} rel="external nofollow noopenner" target="_blank">{decodeURI(canonicalUrl)}</a>
+              <a href={canonicalUrl} rel="external nofollow noopenner">{decodeURI(canonicalUrl)}</a>
             </div>
             <div class="license-meta">
               <div class="license-meta-item">
@@ -54,7 +52,7 @@ const BlogPostTemplate = ({ data, location }) => {
               <div class="license-meta-item">
                 <div class="license-meta-title">许可协议</div>
                 <div class="license-meta-text">
-                  <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="external nofollow noopener noopenner noreferrer" target="_blank">CC BY-NC-SA 4.0</a>
+                  <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="external nofollow noopener noopenner noreferrer">CC BY-NC-SA 4.0</a>
                 </div>
               </div>
             </div>
@@ -68,7 +66,7 @@ const BlogPostTemplate = ({ data, location }) => {
           style={{
             display: `flex`,
             flexWrap: `wrap`,
-            justifyContent: `space-evenly`,
+            justifyContent: `space-between`,
             listStyle: `none`,
             padding: 0,
           }}
