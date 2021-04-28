@@ -8,7 +8,9 @@
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "dependencies": {
+    "algoliasearch": "^4.9.1",
     "gatsby": "^3.3.1",
+    "gatsby-plugin-algolia": "^0.19.0",
     "gatsby-plugin-disqus": "^1.2.2",
     "gatsby-plugin-feed": "^3.2.0",
     "gatsby-plugin-google-analytics": "^3.2.0",
@@ -29,6 +31,8 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
+    "react-instantsearch-dom": "^6.10.3",
+    "styled-components": "^5.2.3",
     "typeface-merriweather": "0.0.72",
     "typeface-montserrat": "0.0.75"
   },

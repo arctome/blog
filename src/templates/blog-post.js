@@ -50,7 +50,7 @@ const BlogPostTemplate = ({ data, location }) => {
               <div class="license-meta-item">
                 <div class="license-meta-title">许可协议</div>
                 <div class="license-meta-text">
-                  <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="external nofollow noopener noopenner noreferrer" target="_blank">CC BY-NC-SA 4.0</a>
+                  <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="external nofollow noopener noopenner noreferrer">CC BY-NC-SA 4.0</a>
                 </div>
               </div>
             </div>
@@ -64,7 +64,7 @@ const BlogPostTemplate = ({ data, location }) => {
           style={{
             display: `flex`,
             flexWrap: `wrap`,
-            justifyContent: `space-evenly`,
+            justifyContent: `space-between`,
             listStyle: `none`,
             padding: 0,
           }}
