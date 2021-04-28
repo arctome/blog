@@ -15,10 +15,8 @@ const BlogList = ({ data, location, pageContext }) => {
                 <Seo title="All posts" />
                 {/* <Bio /> */}
                 <p>
-                    No blog posts found. Add markdown posts to "content/blog" (or the
-                    directory you specified for the "gatsby-source-filesystem" plugin in
-                    gatsby-config.js).
-        </p>
+                    No blog posts found.
+                </p>
             </Layout>
         )
     }
@@ -62,6 +60,7 @@ const BlogList = ({ data, location, pageContext }) => {
             <div style={{display: "flex", alignItems: "center", justifyContent: "space-between"}}>
                 {/* previousPageLink and nextPageLink were added by the plugin */}
                 <Link to={`${(pageContext.currentPage - 1) <= 1 ? '/' : ('/blog/'+(pageContext.currentPage - 1))}`}>Previous</Link>
+                <p>{pageContext.currentPage}</p>
                 {
                     pageContext.numPages <= pageContext.currentPage ? <Link></Link> : <Link to={`/blog/${pageContext.currentPage + 1}`}>Next</Link>
                 }
