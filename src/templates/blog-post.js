@@ -31,7 +31,7 @@ const BlogPostTemplate = ({ data, location }) => {
         />
         <hr />
         <footer>
-          {/* <Bio /> */}
+          <div class="license"><div class="license-title">{post.frontmatter.title}</div><div class="license-link"><a href={location} rel="external nofollow noopenner" target="_blank">{location}</a></div><div class="license-meta"><div class="license-meta-item"><div class="license-meta-title">本文作者</div><div class="license-meta-text">{data.site.siteMetadata?.author.name || "匿名"}</div></div><div class="license-meta-item"><div class="license-meta-title">发布于</div><div class="license-meta-text">{post.frontmatter.date}</div></div><div class="license-meta-item"><div class="license-meta-title">许可协议</div><div class="license-meta-text"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="external nofollow noopener noopenner noreferrer" target="_blank">CC BY-NC-SA 4.0</a></div></div></div><div>转载或引用本文时请遵守许可协议，注明出处、不得用于商业用途！</div></div>
         </footer>
       </article>
       <nav className="blog-post-nav">
