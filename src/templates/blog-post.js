@@ -6,10 +6,6 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { Disqus } from 'gatsby-plugin-disqus';
 
-import "../ccblock.css"
-
-import "../ccblock.css"
-
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -40,7 +36,7 @@ const BlogPostTemplate = ({ data, location }) => {
           <div class="license">
             <div class="license-title">{post.frontmatter.title}</div>
             <div class="license-link">
-              <a href={canonicalUrl} rel="external nofollow noopenner" target="_blank">{decodeURI(canonicalUrl)}</a>
+              <a href={canonicalUrl} rel="external nofollow noopenner">{decodeURI(canonicalUrl)}</a>
             </div>
             <div class="license-meta">
               <div class="license-meta-item">

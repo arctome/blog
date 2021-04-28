@@ -5,3 +5,10 @@ img {
     display: block;
     max-width: 100%;
 }
+.pagination-nav a {
+    display: inline-block;
+    min-width: 80px;
+}
+.pagination-nav a:last-child {
+    text-align: right;
+}

@@ -57,7 +57,7 @@ const BlogList = ({ data, location, pageContext }) => {
                     )
                 })}
             </ol>
-            <div style={{display: "flex", alignItems: "center", justifyContent: "space-between"}}>
+            <div style={{display: "flex", alignItems: "center", justifyContent: "space-between"}} className="pagination-nav">
                 {/* previousPageLink and nextPageLink were added by the plugin */}
                 <Link to={`${(pageContext.currentPage - 1) <= 1 ? '/' : ('/blog/'+(pageContext.currentPage - 1))}`}>Previous</Link>
                 <p style={{margin: 0}}>{pageContext.currentPage}</p>
