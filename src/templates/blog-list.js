@@ -5,7 +5,7 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
-const BlogIndex = ({ data, location, pageContext }) => {
+const BlogList = ({ data, location, pageContext }) => {
     const siteTitle = data.site.siteMetadata?.title || `Title`
     const posts = data.allMarkdownRemark.nodes
 
@@ -62,13 +62,15 @@ const BlogIndex = ({ data, location, pageContext }) => {
             <div style={{display: "flex", alignItems: "center", justifyContent: "space-between"}}>
                 {/* previousPageLink and nextPageLink were added by the plugin */}
                 <Link to={`${(pageContext.currentPage - 1) <= 1 ? '/' : ('/blog/'+(pageContext.currentPage - 1))}`}>Previous</Link>
-                <Link to={`/blog/${pageContext.currentPage + 1}`}>Next</Link>
+                {
+                    pageContext.numPages <= pageContext.currentPage ? <Link></Link> : <Link to={`/blog/${pageContext.currentPage + 1}`}>Next</Link>
+                }
             </div>
         </Layout>
     )
 }
 
-export default BlogIndex
+export default BlogList
 
 // export const pageQuery = graphql`
 //     query($skip: Int, $limit: Int) {
