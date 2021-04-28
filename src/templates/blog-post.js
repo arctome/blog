@@ -38,7 +38,7 @@ const BlogPostTemplate = ({ data, location }) => {
           <div class="license">
             <div class="license-title">{post.frontmatter.title}</div>
             <div class="license-link">
-              <a href={canonicalUrl} rel="external nofollow noopenner" target="_blank">{canonicalUrl}</a>
+              <a href={canonicalUrl} rel="external nofollow noopenner" target="_blank">{decodeURI(canonicalUrl)}</a>
             </div>
             <div class="license-meta">
               <div class="license-meta-item">
@@ -66,7 +66,7 @@ const BlogPostTemplate = ({ data, location }) => {
           style={{
             display: `flex`,
             flexWrap: `wrap`,
-            justifyContent: `space-between`,
+            justifyContent: `space-evenly`,
             listStyle: `none`,
             padding: 0,
           }}
