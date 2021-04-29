@@ -31,8 +31,13 @@ fields:
   default:
   - life
   label: tags
-- type: text
-  name: excerpt
-  label: excerpt
+- name: excerpt
+  type: textarea
+  default: ''
   config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
     max: 200
+  label: excerpt
