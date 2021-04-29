@@ -2,7 +2,7 @@
 tags: []
 categories: Frontend
 title: Javascript 基础知识点总结
-date: 2019-08-12T00:00:00.000+08:00
+date: 2019-08-12T00:05:00.000+08:00
 excerpt: 基础知识点，不能再基础的内容，强烈建议直接前往“Speaking JavaScript”相关笔记深入了解。
 thumbnail: ''
 

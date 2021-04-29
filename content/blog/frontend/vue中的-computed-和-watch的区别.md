@@ -3,7 +3,7 @@ tags:
 - Vue.js
 categories: Frontend
 title: Vue中的 computed 和 watch的区别
-date: 2019-08-22T00:00:00.000+08:00
+date: 2019-08-22T00:03:00.000+08:00
 excerpt: 这道题总有问的，大概两年的时间“经久不衰”，还是单独开一篇文章简单说明一下吧。
 thumbnail: ''
 

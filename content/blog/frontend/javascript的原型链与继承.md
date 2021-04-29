@@ -3,7 +3,7 @@ tags:
 - JavaScript
 categories: Frontend
 title: JavaScript的原型链与继承
-date: 2019-08-21T16:00:00.000+00:00
+date: 2019-08-21T16:04:00.000+00:00
 excerpt: 也是经典面试题与概念，简单介绍一下其中的区别与链条关系，后续可以深入再增加一篇文章。
 thumbnail: ''
 

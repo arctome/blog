@@ -3,7 +3,7 @@ tags:
 - JavaScript
 categories: Frontend
 title: Async/await和Promise的一些区别
-date: 2019-08-20T00:00:00.000+08:00
+date: 2019-08-20T00:02:00.000+08:00
 excerpt: Promise相对更为常用，async是generate/co带来的语法糖，在Node.js环境里应用场景更加广泛，书写也更为顺手。
 thumbnail: ''
 

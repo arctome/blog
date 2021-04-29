@@ -4,7 +4,7 @@ tags:
 - Vue.js
 categories: Frontend
 title: 我们为什么需要使用Vuex做状态管理？
-date: 2019-08-22T00:00:00.000+08:00
+date: 2019-08-22T00:02:00.000+08:00
 excerpt: 日常开发使用Vue就或多或少需要用到Vuex，那么Vuex在Vue项目中扮演了什么角色呢？
 thumbnail: ''
 

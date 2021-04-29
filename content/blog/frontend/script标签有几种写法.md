@@ -3,7 +3,7 @@ tags:
 - HTML
 categories: Frontend
 title: script标签有几种写法
-date: 2019-08-16T16:00:00.000+00:00
+date: 2019-08-16T16:05:00.000+00:00
 excerpt: 老梗新用，“茴”字有几种写法？其实 `script`标签也有很多写法，用这篇文章再梳理一遍加深印象。
 thumbnail: ''
 

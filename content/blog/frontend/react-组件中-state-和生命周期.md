@@ -3,7 +3,7 @@ tags:
 - React.js
 categories: Frontend
 title: React 组件中 state 和生命周期
-date: 2019-08-18T16:00:00.000+00:00
+date: 2019-08-18T16:05:00.000+00:00
 excerpt: React在面试中曾经也有碰到，这里简单记录加深印象。
 thumbnail: ''
 

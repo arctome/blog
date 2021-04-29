@@ -3,7 +3,7 @@ tags:
 - Node.js
 categories: Frontend
 title: Node.js环境log颜色表
-date: 2019-08-12T00:00:00.000+08:00
+date: 2019-08-12T00:04:00.000+08:00
 excerpt: 如果你想自己实现一个Node.js CLI，不妨加入一些颜色来使CLI的交互感更好吧。
 thumbnail: ''
 
