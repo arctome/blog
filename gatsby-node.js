@@ -84,7 +84,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
           skip: i * postsPerPage,
           numPages,
           currentPage: i + 1
-        },
+        }
       })
     })
   }
