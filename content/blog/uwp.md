@@ -21,4 +21,4 @@ UWP应用是一类特殊的应用，Windows会限制其在使用代理时使用1
 
 打开后在左侧的应用名称找到Microsoft Todo（或者其他的UWP应用名），勾选并点击"Save Changes"，即可开启127.0.0.1的本地代理权限。
 
-![使用工具打开UWP的proxy](https://oss.sparkling.fun/puburl/7f5mKkv9qH/enable-uwp-proxy.png)
+![使用工具打开UWP的proxy](https://disk.arcto.xyz/g/h9z3b6cvwm/enable-uwp-proxy.png?t=88u-kx)

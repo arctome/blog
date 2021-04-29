@@ -12,10 +12,10 @@ thumbnail: ''
 
 Bye！
 
-![不定期的旅行牛人分享](https://oss.sparkling.fun/puburl/9PXazHMwAj/微信图片_20190818011937_rc9nev.jpg "不定期的旅行牛人分享")
+![不定期的旅行牛人分享](https://disk.arcto.xyz/g/h9z3b6cvwm/微信图片_20190818011937_rc9nev.jpg?t=fwQFSW "不定期的旅行牛人分享")
 
-![英式电话亭](https://oss.sparkling.fun/puburl/kqGEfvTW7C/微信图片_20190818011907_hxhh3l.jpg "英式电话亭")
+![英式电话亭](https://disk.arcto.xyz/g/h9z3b6cvwm/微信图片_20190818011907_hxhh3l.jpg?t=40rGJ9 "英式电话亭")
 
-![面试就被火车吸引到了](https://oss.sparkling.fun/puburl/keJluCR-_J/微信图片_20190818011927_vj5kxb.jpg "面试就被火车吸引到了")
+![面试就被火车吸引到了](https://disk.arcto.xyz/g/h9z3b6cvwm/微信图片_20190818011927_vj5kxb.jpg?t=DpVLKY "面试就被火车吸引到了")
 
-![JNE的旅行物件](https://oss.sparkling.fun/puburl/Fc0fe6EH57/微信图片_20190818011931_owanyw.jpg "JNE的旅行物件")
+![JNE的旅行物件](https://disk.arcto.xyz/g/h9z3b6cvwm/微信图片_20190818011931_owanyw.jpg?t=SjEqkt "JNE的旅行物件")

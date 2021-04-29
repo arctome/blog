@@ -24,10 +24,10 @@ thumbnail: ''
 
 在右侧窗口，右键，新建DWORD（32位）值，命名为`Allowsxs`，双击修改值为1（保持16进制不变）。
 
-最终成果如图：![注册表最终修改](https://oss.sparkling.fun/puburl/aYsSSUZtwG/dual-edge-reg.png)
+最终成果如图：![注册表最终修改](https://disk.arcto.xyz/g/h9z3b6cvwm/dual-edge-reg.png?t=HfLa9e)
 
 ## 如果操作完成后开始菜单仍找不到“Microsoft Edge 旧版”
 
 在“设置” > “应用和功能”找到新版Edge，点击修改，（如果有卸载可以尝试卸载），再重新安装即可双版本共存。
 
-![双版本共存](https://oss.sparkling.fun/puburl/ITn_xYCzy1/dual-edge-final.png)
+![双版本共存](https://disk.arcto.xyz/g/h9z3b6cvwm/dual-edge-final.png?t=_0o9X2)

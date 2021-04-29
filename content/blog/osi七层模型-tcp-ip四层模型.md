@@ -33,4 +33,4 @@ TCP/IP通讯协议采用了4层的层级结构，每一层都呼叫它的下一�
 * 网络层：负责提供基本的数据封包传送功能，让每一块数据包都能够到达目的主机（但不检查是否被正确接收），如网际协议（IP）。
 * 网络接口层：对实际的网络媒体的管理，定义如何使用实际网络（如Ethernet、Serial Line等）来传送数据。
 
-![对比图示](https://oss.sparkling.fun/puburl/xlBD0iyspz/OSI-TCP.jpg)
+![对比图示](https://disk.arcto.xyz/g/h9z3b6cvwm/OSI-TCP.jpg?t=zHCsEl)
