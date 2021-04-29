@@ -3,20 +3,36 @@ label: Life Posts
 hide_body: false
 fields:
 - type: text
-  name: categories
-  label: categories
-- type: list
-  name: tags
-  label: tags
+  name: title
+  label: title
 - type: datetime
   name: date
   label: date
-- type: text
-  name: title
-  label: title
+  config:
+    required: true
+  default: now
+- name: categories
+  type: select
+  default: life
+  config:
+    required: true
+    options:
+    - frontend
+    - life
+    - others
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: categories
+- name: tags
+  type: tag_list
+  default:
+  - life
+  label: tags
 - type: text
   name: excerpt
   label: excerpt
-- type: text
-  name: thumbnail
-  label: thumbnail
+  config:
+    max: 200
