@@ -9,6 +9,8 @@ import algoliasearch from "algoliasearch/lite"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
+import "../search.css"
+
 const indices = [{ name: `Pages`, title: `Pages` }]
 
 const SearchList = ({ data, location }) => {
