@@ -65,10 +65,10 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-primary: #ccc;
-    --color-text: #c1c1c1;
+    --color-primary: #ddd;
+    --color-text: #999;
     --color-text-light: #4f5969;
-    --color-heading: #ccc;
+    --color-heading: #ddd;
     --color-heading-black: #fff;
     --color-accent: #d1dce5;
     --color-background: #000;
