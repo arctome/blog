@@ -1,5 +1,6 @@
 import * as React from "react"
 import { Link } from "gatsby"
+import { Helmet } from "react-helmet"
 
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
@@ -22,6 +23,12 @@ const Layout = ({ location, title, children }) => {
 
   return (
     <div className="global-wrapper" data-is-root-path={isRootPath}>
+      <Helmet
+        meta={[{
+          name: "viewport",
+          content: "width=device-width, height=device-height,  initial-scale=1.0, user-scalable=no;user-scalable=0;"
+        }]}
+      ></Helmet>
       <header className="global-header" style={{display: "flex", alignItems: "baseline", justifyContent: "space-between"}}>
         {header}
         {

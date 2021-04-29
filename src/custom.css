@@ -1,6 +1,9 @@
 * {
     word-break: break-word;
 }
+code {
+    word-break: break-all !important;
+}
 img {
     display: block;
     max-width: 100%;
