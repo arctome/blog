@@ -1,5 +1,5 @@
 * {
-    word-break: break-all;
+    word-break: break-word;
 }
 img {
     display: block;
@@ -11,4 +11,22 @@ img {
 }
 .pagination-nav a:last-child {
     text-align: right;
+}
+
+@media (prefers-color-scheme: dark) {
+    :not(pre) > code[class*="language-"], pre[class*="language-"] {
+        background: #252525;
+        color: var(--color-primary);
+        text-shadow: none;
+    }
+    .license {
+        opacity: .6;
+    }
+    .search-input {
+        background: #252525 !important;
+        color: var(--color-primary) !important;
+    }
+    mark {
+        background: #252d38;
+    }
 }
