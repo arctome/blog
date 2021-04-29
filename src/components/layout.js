@@ -1,7 +1,5 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import Search from "./search"
-const searchIndices = [{ name: `Pages`, title: `Pages` }]
 
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
@@ -24,7 +22,13 @@ const Layout = ({ location, title, children }) => {
 
   return (
     <div className="global-wrapper" data-is-root-path={isRootPath}>
-      <header className="global-header">{header}<Search indices={searchIndices} /></header>
+      <header className="global-header" style={{display: "flex", alignItems: "baseline", justifyContent: "space-between"}}>
+        {header}
+        {
+          location.pathname === "/search" ? 
+          <Link to="/"><i className="icon icon-close"></i></Link> : 
+          <Link to="/search"><i className="icon icon-search"></i></Link>}
+      </header>
       <main>{children}</main>
       <footer>
         Copyright © Arcto {new Date().getFullYear()}
