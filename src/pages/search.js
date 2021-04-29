@@ -19,14 +19,28 @@ const SearchList = ({ data, location }) => {
     const [hasFocus, setFocus] = useState(false)
     const algoliaClient = algoliasearch(
         process.env.GATSBY_ALGOLIA_APP_ID,
-        process.env.GATSBY_ALGOLIA_SEARCH_KEY
+        process.env.GATSBY_ALGOLIA_SEARCH_KEY, {
+          _useRequestCache: true,
+        }
     )
     const searchClient = {
         ...algoliaClient,
         search(requests) {
-            if(requests[0].params.query) {
-                return algoliaClient.search(requests);
-            }
+            // if(requests[0].params.query) {
+            //     return algoliaClient.search(requests);
+            // }
+            const newRequests = requests.map((request) => {
+                // test for empty string and change request parameter: analytics
+                if (!request.params.query || request.params.query.length === 0) {
+                    // request.params.analytics = false
+                    return Promise.resolve({
+                        results: [{ hits: [] }],
+                    });
+                }
+                return request
+            });
+
+            return algoliaClient.search(newRequests);
         }
     }
 
