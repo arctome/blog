@@ -11,11 +11,6 @@ sections:
   match: "**/*"
 - type: directory
   path: content/blog
-  label: others
-  create: documents
-  match: "**/*"
-- type: directory
-  path: content/blog
   label: frontend
   create: documents
   match: "**/*"
