@@ -9,16 +9,22 @@ sections:
   label: frontend
   create: documents
   match: "**/*"
+  templates:
+  - frontend-post
 - type: directory
   path: content/blog/others
   label: others
   create: documents
   match: "**/*"
+  templates:
+  - others-posts
 - type: directory
   path: content/blog/life
   label: life
   create: documents
   match: "**/*"
+  templates:
+  - life-posts
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
