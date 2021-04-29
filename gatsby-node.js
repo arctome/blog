@@ -13,7 +13,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     `
       {
         allMarkdownRemark(
-          sort: { fields: [frontmatter___date], order: ASC }
+          sort: { fields: [frontmatter___date, id], order: ASC }
           limit: 1000
         ) {
           nodes {
@@ -84,7 +84,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
           skip: i * postsPerPage,
           numPages,
           currentPage: i + 1
-        },
+        }
       })
     })
   }
