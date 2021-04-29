@@ -3,20 +3,36 @@ label: Frontend Post
 hide_body: false
 fields:
 - type: text
-  name: categories
-  label: categories
-- type: list
-  name: tags
-  label: tags
+  name: title
+  label: title
 - type: datetime
   name: date
   label: date
-- type: text
-  name: title
-  label: title
+  default: now
+  config:
+    required: true
+- name: categories
+  type: select
+  default: frontend
+  config:
+    required: true
+    options:
+    - frontend
+    - life
+    - others
+    source:
+      type: simple
+      section: frontend
+      file: 
+      path: 
+  label: categories
+- name: tags
+  type: tag_list
+  default:
+  - frontend
+  label: tags
 - type: text
   name: excerpt
   label: excerpt
-- type: text
-  name: thumbnail
-  label: thumbnail
+  config:
+    max: 200
