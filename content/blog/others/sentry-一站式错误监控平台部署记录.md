@@ -1,5 +1,5 @@
 ---
-categories: Other
+categories: frontend
 tags:
 - 工具
 date: 2020-05-08T00:22:15.000+08:00
@@ -9,6 +9,12 @@ thumbnail: ''
 
 ---
 ## Sentry是什么？
+
+### 2021-05 更新
+
+经过自己的反复部署，多VPS部署……仍认为9.2是最适合个人项目使用的版本，虽然已经不能和Github正常联动，但是整体资源和部署难度都比较低，而且也不会遇见大量的严重Bug。
+
+## ================ 分割线 ================
 
 > Sentry helps all software teams create the best software, faster.
 
