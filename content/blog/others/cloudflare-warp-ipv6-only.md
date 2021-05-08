@@ -5,7 +5,7 @@ tags:
 - others
 - Cloudflare
 - Warp
-title: 使用Cloudflare Warp为IPv6 only的机器
+title: 使用Cloudflare Warp为IPv6 only的机器添加IPv4
 excerpt: 利用Cloudflare的CDN网络，我们可以为IPv6的机器接入Warp从而访问IPv4网站。
 
 ---
