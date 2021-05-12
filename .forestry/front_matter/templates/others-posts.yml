@@ -43,4 +43,5 @@ fields:
   label: excerpt
 pages:
 - content/blog/others/cloudflare-warp-ipv6-only.md
+- content/blog/others/vim.md
 - content/blog/others/windows10-uefi.md
