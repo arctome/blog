@@ -43,6 +43,7 @@ fields:
   label: excerpt
 pages:
 - content/blog/others/cloudflare-warp-ipv6-only.md
+- content/blog/others/docker-swarm.md
 - content/blog/others/vim.md
 - content/blog/others/windows10-uefi.md
 - content/blog/others/安全配置服务器网络.md
