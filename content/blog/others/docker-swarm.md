@@ -43,3 +43,13 @@ docker node update --label-add test swarm-test-04
 docker node ls --filter node.label=test
 ```
 
+## 开放端口
+
+对于一般的IPv4机器我们可以直接使用类似`8080:8080`的方式打开，但是如果是IPv6 Only，打开端口需要将配置改为：
+
+```yaml
+- target: 8080
+  published: 8080
+  protocol: tcp
+  mode: host
+```
