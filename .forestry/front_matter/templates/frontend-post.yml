@@ -41,3 +41,5 @@ fields:
       format: markdown
     max: 200
   label: excerpt
+pages:
+- content/blog/frontend/disable.md
