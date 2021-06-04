@@ -43,3 +43,4 @@ fields:
   label: excerpt
 pages:
 - content/blog/frontend/disable.md
+- content/blog/frontend/pkg-next.js.md
