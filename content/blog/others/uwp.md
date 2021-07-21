@@ -17,7 +17,7 @@ UWP应用是一类特殊的应用，Windows会限制其在使用代理时使用1
 这是一个来自Fiddler的项目，用来调试UWP应用，也可以为我们简单的开启本地代理。
 
 > Qv2ray给出的下载地址：[链接](https://qv2ray.net/EnableLoopback.zip)
-> 上传到本站的地址：[链接](https://oss.sparkling.fun/puburl/iHL9q64D_H/EnableLoopback.exe)
+> 上传到本站的地址：[链接](https://x.arcto.xyz/E2itoL/EnableLoopback.exe)
 
 打开后在左侧的应用名称找到Microsoft Todo（或者其他的UWP应用名），勾选并点击"Save Changes"，即可开启127.0.0.1的本地代理权限。
 

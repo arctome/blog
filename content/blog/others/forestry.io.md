@@ -19,8 +19,6 @@ thumbnail: ''
 
 然而写博客主要是内容，那么书写平台就是一大问题，我们虽然可以用本地IDE（亦或是Code Server/VSCode Remote）这一类工具进行编写，但是未免仍不够轻量，如果是iPad这一类移动设备更是不方便，因而，我发现了这个基于Git的第三方编辑平台—— [Forestry.io](https://forestry.io)
 
-![Forestry.io CMS](https://res.cloudinary.com/forestry-io/image/fetch/c_limit,dpr_auto,f_auto,q_80,w_1028/https://forestry.io/uploads/2018/12/draft-post-editor.png)
-
 ## 快速上手
 
 Forestry.io支持四种Git来源：Github, Gitlab, Bitbucket, Azure Devops。
