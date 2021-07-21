@@ -20,7 +20,7 @@ thumbnail: ''
 
 区别如下
 
-![script标签属性区别](https://disk.arcto.xyz/g/h9z3b6cvwm/script-tag-difference.png?t=2sT8WO)
+![script标签属性区别](https://x.arcto.xyz/y04gmB/script-tag-difference.png)
 
 如图可知，async不影响页面解析过程，但是加载完成执行过程会终止parsing；
 而defer是在过程中加载，等到页面解析完成后才执行。

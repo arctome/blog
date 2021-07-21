@@ -14,7 +14,7 @@ thumbnail: ''
 
 ~~为什么没有用最新的第四版高程呢？因为2019.10.16才正式有英文版，而且作者和第三版不是同一位……等到出了正式中文版再做一次补充吧~~
 
-![Speaking JavaScript](https://disk.arcto.xyz/g/h9z3b6cvwm/orm_front_cover.jpg?t=WH7iZb "中文名：深入理解JavaScript")
+![Speaking JavaScript](https://x.arcto.xyz/N4DgB-/orm_front_cover.jpg "中文名：深入理解JavaScript")
 
 # 0. JavaScript背景知识
 

@@ -12,7 +12,7 @@ thumbnail: ''
 
 v16.3和v16.4+版本的生命周期有着比较大的区别，感谢大神制作了一个[React生命周期图谱](http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/) 这里截图说明：
 
-![React生命周期](https://disk.arcto.xyz/g/h9z3b6cvwm/React生命周期_jp8yqw.jpg?t=057gPh)
+![React生命周期](https://x.arcto.xyz/gHN3CF/React生命周期_jp8yqw.jpg)
 
 * constructor
   **如果不初始化 state 或不进行方法绑定，则不需要为 React 组件实现构造函数。**

@@ -35,17 +35,17 @@ Forestry.io支持四种Git来源：Github, Gitlab, Bitbucket, Azure Devops。
 
 本篇以一个GatsbyJS的模板项目为例子，Hexo，Hugo，Jekyll官网上都有相关的例子可以参考。如果你是Hexo，请选择Other类别。然后点击Next。
 
-![选择静态生成框架](https://disk.arcto.xyz/g/h9z3b6cvwm/forestry-step1.png?t=Yi6DFX)
+![选择静态生成框架](https://x.arcto.xyz/ACvJrn/forestry-step1.png)
 
 进入到“Select your git provider”界面，和原来一样，选择你的Git来源，这里我选择Github。
 
 第三步就来到了仓库选择，直接选择你想要操作的仓库与分支，如果你不想让Forestry提交commit到master，请在此选择一个编辑分支。
 
-![选择仓库与分支](https://disk.arcto.xyz/g/h9z3b6cvwm/forestry-step3.png?t=021Y3A)
+![选择仓库与分支](https://x.arcto.xyz/px985W/forestry-step3.png)
 
 导入完成，进入到CMS的主界面。
 
-![CMS主界面](https://disk.arcto.xyz/g/h9z3b6cvwm/forestry-step4.png?t=OCoVgZ)
+![CMS主界面](https://x.arcto.xyz/mrnxZc/forestry-step4.png)
 
 ## 简单设置
 
@@ -55,7 +55,7 @@ Forestry.io支持四种Git来源：Github, Gitlab, Bitbucket, Azure Devops。
 
 侧边栏是一些快捷入口，这里你可以配置三类：
 
-![侧边栏配置](https://disk.arcto.xyz/g/h9z3b6cvwm/forestry-setting1.png?t=pUCuUT)
+![侧边栏配置](https://x.arcto.xyz/DzKWqf/forestry-setting1.png)
 
 * 目录: 顾名思义，目录可以用作分类等场合，对应的，所有在分类下创建的文档都会进入到对应的目录下；
 * 文档: 直接编辑某一篇文档，适合作为介绍页或者文档页的快捷入口；
@@ -63,7 +63,7 @@ Forestry.io支持四种Git来源：Github, Gitlab, Bitbucket, Azure Devops。
 
 这里添加一个Section，可以看到可以配置很多项，一般默认即可，如果不希望分类下额外存在目录，可以将创建内容改为Documents
 
-![创建侧边栏](https://disk.arcto.xyz/g/h9z3b6cvwm/forestry-setting2.png?t=7ULI9Z)
+![创建侧边栏](https://x.arcto.xyz/KEXWaw/forestry-setting2.png)
 
 这里我们先不配置默认模板，先保存。
 
@@ -73,7 +73,7 @@ Forestry.io支持四种Git来源：Github, Gitlab, Bitbucket, Azure Devops。
 
 而有了CMS，这一切都简化了。
 
-![](https://disk.arcto.xyz/g/h9z3b6cvwm/forestry-setting3.png?t=uDBR_g "配置媒体文件")
+![](https://x.arcto.xyz/ks36HG/forestry-setting3.png "配置媒体文件")
 
 如图所示，可以支持四种图片管理方式，最普通的Git提交，第三方支持了Cloudinary和Amazon S3以及Netlify Large Media。
 
@@ -83,7 +83,7 @@ Forestry.io支持四种Git来源：Github, Gitlab, Bitbucket, Azure Devops。
 
 如果配置顺利，在“可视化编辑器”内，你就可以点击这里实现上传直接插入文档中：
 
-![](https://disk.arcto.xyz/g/h9z3b6cvwm/forestry-setting4.png?t=tnbXi2 "添加图片")
+![](https://x.arcto.xyz/JatvkA/forestry-setting4.png "添加图片")
 
 点击open后，会跳转到你的媒体库，上传即自动插入到文章中。
 
@@ -101,6 +101,6 @@ Forestry.io支持在发布前进行预览，需要配置预览的相关命令，
 
 一般对于Markdown的博客写作，我们选择左侧的“Fields and big content area”。
 
-![](https://disk.arcto.xyz/g/h9z3b6cvwm/forestry-setting5.png?t=6GHeGv)
+![](https://x.arcto.xyz/Z721sM/forestry-setting5.png)
 
 Forestry.io提供了一些Field选项，对于博客写作，它们可以与你的Front matter一一对应，通过交互实现配置Front matter，进而与你的博客主题（如Banner图，文章简介等等）比较好的对应，具体使用可以自己体验一下。

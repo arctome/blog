@@ -117,13 +117,13 @@ HTML5 新增的事件，可以用来作为一些特殊的交互，比如拖放�
 
 1. 不会引发CORS的简单请求：
 
-   ![MDN-CORS](https://disk.arcto.xyz/g/h9z3b6cvwm/CORS_simple-request.png?t=jaFuRH)
+   ![MDN-CORS](https://x.arcto.xyz/TV9IYt/CORS_simple-request.png)
 2. 需要进行预检（Preflight）的请求：
 
-   ![MDN-CORS](https://disk.arcto.xyz/g/h9z3b6cvwm/CORS_preflight-request.png?t=moY-Wd)
+   ![MDN-CORS](https://x.arcto.xyz/T9Q56f/CORS_preflight-request.png)
 3. 携带身份凭证（Cookie）：
 
-   ![MDN-CORS](https://disk.arcto.xyz/g/h9z3b6cvwm/CORS_with-credit.png?t=OgAb4Y)
+   ![MDN-CORS](https://x.arcto.xyz/WDX1n8/CORS_with-credit.png)
    
 ### 高级技巧：节流与防抖
 
