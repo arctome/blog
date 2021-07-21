@@ -43,6 +43,7 @@ fields:
   label: excerpt
 pages:
 - content/blog/frontend/disable.md
+- content/blog/frontend/npm.md
 - content/blog/frontend/pkg-next.js.md
 - content/blog/frontend/yarn.lock-vulnerability.md
 - content/blog/frontend/媒体查询生效的必要条件.md
