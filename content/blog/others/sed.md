@@ -1,5 +1,5 @@
 ---
-categories: Other
+categories: others
 date: 2020-08-22T10:49:36+08:00
 tags:
 - Linux

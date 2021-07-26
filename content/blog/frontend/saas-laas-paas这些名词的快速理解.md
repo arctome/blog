@@ -1,7 +1,7 @@
 ---
 tags:
 - 概念
-categories: Other
+categories: others
 title: SaaS, laaS, PaaS这些名词的快速理解
 date: 2020-01-07T00:00:00.000+08:00
 excerpt: "\\*aaS，现在这些概念被各大云平台提来提去，简单说明下概念。"

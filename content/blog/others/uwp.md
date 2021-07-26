@@ -1,5 +1,5 @@
 ---
-categories: Other
+categories: others
 date: 2020-08-10T13:33:08+08:00
 tags:
 - UWP

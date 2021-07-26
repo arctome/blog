@@ -1,6 +1,6 @@
 ---
 date: 2021-05-12T17:52:01+08:00
-categories: others
+categories: otherss
 tags:
 - others
 title: Vim 删除空行、行首空格、行尾空格

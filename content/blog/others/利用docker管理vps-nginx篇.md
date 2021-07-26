@@ -1,5 +1,5 @@
 ---
-categories: Other
+categories: others
 tags:
 - Linux
 date: 2020-03-26T01:18:34.000+08:00

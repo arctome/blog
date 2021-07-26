@@ -1,6 +1,6 @@
 ---
 date: 2021-05-24T07:16:21+08:00
-categories: others
+categories: otherss
 tags:
 - others
 - Docker

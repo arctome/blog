@@ -1,7 +1,7 @@
 ---
 tags:
 - 工作
-categories: Life
+categories: life
 title: Bye QYER
 date: 2019-08-17T16:00:00.000+00:00
 excerpt: 2019年，入职一年之后还是选择了离开穷游探索更加广泛的天地，不忘初心，加油！

@@ -1,5 +1,5 @@
 ---
-categories: Other
+categories: others
 date: 2020-08-02T01:49:59+08:00
 tags:
 - 工具

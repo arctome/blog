@@ -1,5 +1,5 @@
 ---
-categories: Other
+categories: others
 tags:
 - 记录
 date: 2020-06-14T16:34:26.000+08:00

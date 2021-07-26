@@ -1,7 +1,7 @@
 ---
 tags:
 - CheatSheet
-categories: Other
+categories: others
 title: Git常用命令速览
 date: 2019-08-12T00:00:00.000+08:00
 excerpt: Git命令的CheatSheet

@@ -5,7 +5,7 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
-const BlogList = ({ data, location, pageContext }) => {
+const LifeList = ({ data, location, pageContext }) => {
     const siteTitle = data.site.siteMetadata?.title || `Title`
     const posts = data.allMarkdownRemark.nodes
 
@@ -22,7 +22,7 @@ const BlogList = ({ data, location, pageContext }) => {
     }
 
     return (
-        <Layout location={location} title={siteTitle}>
+        <Layout location={location} title={siteTitle} currentActive={pageContext.prefix}>
             <Seo title="All posts" />
             {/* <Bio /> */}
             <ol style={{ listStyle: `none` }}>
@@ -59,20 +59,22 @@ const BlogList = ({ data, location, pageContext }) => {
             </ol>
             <div style={{display: "flex", alignItems: "center", justifyContent: "space-between"}} className="pagination-nav">
                 {/* previousPageLink and nextPageLink were added by the plugin */}
-                <Link to={`${(pageContext.currentPage - 1) <= 1 ? '/' : ('/blog/'+(pageContext.currentPage - 1))}`}>Previous</Link>
+                {
+                    pageContext.currentPage - 1 < 1 ? <Link></Link> : <Link to={`/${pageContext.prefix}/${pageContext.currentPage - 1}`}>Previous</Link>
+                }
                 <p style={{margin: 0}}>{pageContext.currentPage}</p>
                 {
-                    pageContext.numPages <= pageContext.currentPage ? <Link></Link> : <Link to={`/blog/${pageContext.currentPage + 1}`}>Next</Link>
+                    pageContext.numPages <= pageContext.currentPage ? <Link></Link> : <Link to={`/${pageContext.prefix}/${pageContext.currentPage + 1}`}>Next</Link>
                 }
             </div>
         </Layout>
     )
 }
 
-export default BlogList
+export default LifeList
 
 export const pageQuery = graphql`
-  query blogListQuery($skip: Int!, $limit: Int!) {
+  query lifeListQuery($skip: Int!, $limit: Int!) {
     site {
         siteMetadata {
             title
@@ -82,6 +84,7 @@ export const pageQuery = graphql`
       sort: { fields: [frontmatter___date], order: DESC }
       limit: $limit
       skip: $skip
+      filter: {frontmatter: {categories: {eq: "life"}}}
     ) {
         nodes {
             excerpt

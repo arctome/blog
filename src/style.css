@@ -266,6 +266,14 @@ a:focus {
 
 .global-header {
   margin-bottom: var(--spacing-12);
+  flex-wrap: wrap;
+}
+.global-header nav a {
+  margin-left: var(--spacing-5);
+}
+.global-header nav a.active {
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .main-heading {
@@ -334,7 +342,6 @@ a:focus {
 }
 
 /* Media queries */
-
 @media (max-width: 42rem) {
   blockquote {
     padding: var(--spacing-0) var(--spacing-0) var(--spacing-0) var(--spacing-4);
@@ -343,5 +350,8 @@ a:focus {
   ul,
   ol {
     list-style-position: inside;
+  }
+  .global-header nav {
+    margin-top: var(--spacing-10);
   }
 }

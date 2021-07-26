@@ -34,30 +34,8 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     )
     return
   }
-
   // Create blog-list pages
   const posts = result.data.allMarkdownRemark.nodes
-
-  // paginate({
-  //   createPage, // The Gatsby `createPage` function
-  //   items: posts, // An array of objects
-  //   itemsPerPage: 10, // How many items you want per page
-  //   pathPrefix: '/blog', // Creates pages like `/blog`, `/blog/2`, etc
-  //   component: blogIndex, // Just like `createPage()`
-  // })
-
-  // createPagePerItem({
-  //   createPage,
-  //   items: posts,
-  //   component: blogPost,
-  //   itemToPath: "node.field.slug",
-  //   itemToId: "node.id"
-  // });
-
-  // Create blog posts pages
-  // But only if there's at least one markdown file found at "content/blog" (defined in gatsby-config.js)
-  // `context` is available in the template as a prop and as a variable in GraphQL
-
   if (posts.length > 0) {
     posts.forEach((post, index) => {
       const previousPostId = index === 0 ? null : posts[index - 1].id
@@ -88,6 +66,58 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       })
     })
   }
+
+  // Create pages by categories
+  async function generateCategoryList(category_name, category_path) {
+    const categoryResult = await graphql(
+      `
+        {
+          allMarkdownRemark(
+            sort: { fields: [frontmatter___date], order: ASC }
+            limit: 1000
+            filter: {frontmatter: {categories: {eq: "${category_name}"}}}
+          ) {
+            nodes {
+              id
+              fields {
+                slug
+              }
+            }
+          }
+        }
+      `
+    )
+    if (categoryResult.errors) {
+      reporter.panicOnBuild(
+        `There was an error loading your blog posts`,
+        categoryResult.errors
+      )
+      return
+    }
+    // Create blog-list pages
+    const posts = categoryResult.data.allMarkdownRemark.nodes
+    if (posts.length > 0) {
+      const postsPerPage = 10
+      const numPages = Math.ceil(posts.length / postsPerPage)
+      Array.from({ length: numPages }).forEach((_, i) => {
+        createPage({
+          path: `/${category_path}/${i + 1}`,
+          component: path.resolve(`./src/templates/${category_name}-list.js`),
+          context: {
+            limit: postsPerPage,
+            skip: i * postsPerPage,
+            numPages,
+            currentPage: i + 1,
+            prefix: category_path
+          }
+        })
+      })
+    }
+  }
+
+  await generateCategoryList("frontend", "frontend")
+  await generateCategoryList("others", "others")
+  await generateCategoryList("life", "life")
 }
 
 exports.onCreateNode = ({ node, actions, getNode }) => {

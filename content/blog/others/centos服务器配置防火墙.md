@@ -1,7 +1,7 @@
 ---
 tags:
 - Linux
-categories: Other
+categories: others
 title: CentOS服务器配置防火墙
 date: 2019-08-26T00:00:00.000+08:00
 excerpt: 虽然现在用CentOS较少，（因为Docker的原因，基本都是Ubuntu18.04），但是就作为CheatSheet保留在此吧

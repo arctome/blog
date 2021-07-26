@@ -2,7 +2,7 @@ import * as React from "react"
 import { Link } from "gatsby"
 import { Helmet } from "react-helmet"
 
-const Layout = ({ location, title, children }) => {
+const Layout = ({ location, title, currentActive, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
   const isRootPath = location.pathname === rootPath
   let header
@@ -31,10 +31,16 @@ const Layout = ({ location, title, children }) => {
       ></Helmet>
       <header className="global-header" style={{display: "flex", alignItems: "baseline", justifyContent: "space-between"}}>
         {header}
+        <nav>
+        <Link to="/frontend/1" className={[currentActive === "frontend" ? "active" : ""].join(" ")}>Frontend</Link>
+        <Link to="/others/1" className={[currentActive === "others" ? "active" : ""].join(" ")}>Others</Link>
+        <Link to="/life/1" className={[currentActive === "life" ? "active" : ""].join(" ")}>My Life</Link>
         {
           location.pathname === "/search" ? 
           <Link to="/"><i className="icon icon-close"></i></Link> : 
-          <Link to="/search"><i className="icon icon-search"></i></Link>}
+          <Link to="/search"><i className="icon icon-search"></i></Link>
+        }
+        </nav>
       </header>
       <main>{children}</main>
       <footer>

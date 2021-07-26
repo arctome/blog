@@ -1,6 +1,6 @@
 ---
 date: 2021-05-27T15:29:55+08:00
-categories: others
+categories: otherss
 tags:
 - others
 - UFW

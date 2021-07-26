@@ -1,6 +1,6 @@
 ---
 date: 2021-04-29T19:07:16+08:00
-categories: others
+categories: otherss
 tags:
 - others
 - windows

@@ -1,5 +1,5 @@
 ---
-categories: Other
+categories: others
 tags:
 - WSL
 date: 2020-04-22T14:44:42.000+08:00

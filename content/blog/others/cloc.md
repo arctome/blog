@@ -1,6 +1,6 @@
 ---
 date: 2021-07-05T15:21:52+08:00
-categories: others
+categories: otherss
 tags:
 - others
 title: 使用cloc有效统计你的代码量

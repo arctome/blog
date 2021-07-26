@@ -1,5 +1,5 @@
 ---
-categories: Other
+categories: others
 date: 2020-08-09T16:37:06+08:00
 tags:
 - Edge

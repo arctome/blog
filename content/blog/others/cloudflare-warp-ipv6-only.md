@@ -1,6 +1,6 @@
 ---
 date: 2021-05-07T00:57:54+08:00
-categories: others
+categories: otherss
 tags:
 - others
 - Cloudflare
