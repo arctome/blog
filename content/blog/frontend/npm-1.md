@@ -19,3 +19,11 @@ sudo chown -R $USER /usr/lib/node_modules
 # For npm version smaller than v7, the path may be `/usr/local/lib`
 # sudo chown -R $USER /usr/local/lib/node_modules
 ```
+
+## npm lifecycle warning
+
+```
+npm WARN lifecycle The node binary used for scripts is /var/folders/g_/dslq6ff90pn_wyjv5g6578qm0000gn/T/yarn—1577473189287-0.1962072526914138/node but npm is using /usr/local/Cellar/node/13.5.0/bin/node itself. Use the `—scripts-prepend-node-path` option to include the path for the node binary npm was executed with.
+```
+
+警告中已经提示了，需要执行 `npm config set scripts-prepend-node-path true` 解决。
