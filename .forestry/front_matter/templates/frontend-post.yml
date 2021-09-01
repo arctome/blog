@@ -46,6 +46,7 @@ pages:
 - content/blog/frontend/npm-1.md
 - content/blog/frontend/opensearch.md
 - content/blog/frontend/pkg-next.js.md
+- content/blog/frontend/webpack-4-loader.md
 - content/blog/frontend/yarn.lock-vulnerability.md
 - content/blog/frontend/媒体查询生效的必要条件.md
 - content/blog/frontend/有关移动端表单输入与提交的二三事.md
