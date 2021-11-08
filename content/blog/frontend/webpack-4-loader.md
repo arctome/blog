@@ -19,3 +19,14 @@ excerpt: ''
 - sass-loader@10.2.0
 - postcss-loader@4.2.0
 - less-loader@7.3.0
+- mini-css-extract-plugin@1.6.2
+- copy-webpack-plugin@6.4.1
+
+> Webpack4对于mjs文件处理存在问题，可以增加一条以下规则：
+> ```javascript
+> {
+>     test: /\.mjs$/,
+>     include: /node_modules/,
+>     type: "javascript/auto",
+> }
+> ```
