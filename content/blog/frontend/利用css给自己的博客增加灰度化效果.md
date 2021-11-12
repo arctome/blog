@@ -2,6 +2,7 @@
 categories: Frontend
 tags:
 - CSS
+- 灰度化
 date: 2020-04-04T01:48:03.000+08:00
 title: 利用CSS给自己的博客增加灰度化效果
 excerpt: 特殊的日子，前端需要配合做一些修改，这里总结一些大厂的实现方法。

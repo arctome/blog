@@ -1,6 +1,9 @@
 ---
 tags:
 - CSS
+- 文本省略
+- ellipsis
+- 文本溢出
 categories: Frontend
 title: 利用CSS写一个可高度自定义的多行文本自动省略Vue组件
 date: 2019-08-12T00:02:00.000+08:00

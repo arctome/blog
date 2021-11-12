@@ -3,6 +3,9 @@ date: 2021-09-01T17:30:13+08:00
 categories: frontend
 tags:
 - webpack
+- webpack 4
+- loader
+- 兼容
 title: Webpack 4最后兼容的loader
 excerpt: ''
 

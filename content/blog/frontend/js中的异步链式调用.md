@@ -1,6 +1,8 @@
 ---
 tags:
 - JavaScript
+- 异步
+- 链式
 categories: Frontend
 title: JS中的异步链式调用
 date: 2020-02-16T16:00:00.000+00:00

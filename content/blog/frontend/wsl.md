@@ -3,6 +3,13 @@ date: 2021-09-06T13:43:31+08:00
 categories: frontend
 tags:
 - WSL
+- 开发环境
+- NPM
+- NVM
+- Node.js
+- Podman
+- 容器
+- WSL2
 title: 使用WSL快速搭建开发环境
 excerpt: ''
 

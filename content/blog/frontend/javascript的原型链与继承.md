@@ -1,6 +1,10 @@
 ---
 tags:
 - JavaScript
+- Prototype
+- 原型
+- 原型链
+- 继承
 categories: Frontend
 title: JavaScript的原型链与继承
 date: 2019-08-21T16:04:00.000+00:00

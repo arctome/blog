@@ -1,6 +1,10 @@
 ---
 tags:
 - JavaScript
+- 异步
+- async
+- await
+- Promise
 categories: Frontend
 title: Async/await和Promise的一些区别
 date: 2019-08-20T00:02:00.000+08:00

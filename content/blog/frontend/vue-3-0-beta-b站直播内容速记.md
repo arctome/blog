@@ -2,6 +2,7 @@
 categories: Frontend
 tags:
 - Vue.js
+- Vue 3.0
 date: 2020-04-21T22:27:05.000+08:00
 title: '"Vue 3.0 Beta"B站直播内容速记'
 excerpt: 通过B站直播，整体的重新了解了Vue3的概况，虽然一年内可能不会常用，但还是尽量了解尤大的开发思想，便于后续快速升级。

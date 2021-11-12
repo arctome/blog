@@ -1,6 +1,8 @@
 ---
 tags:
 - Vue.js
+- Virtual DOM
+- MVVM
 categories: Frontend
 title: 从DOM与虚拟DOM了解Vue和React是如何响应数据变化的
 date: 2020-01-08T00:00:00.000+08:00

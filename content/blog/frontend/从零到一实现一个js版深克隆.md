@@ -2,6 +2,9 @@
 categories: Frontend
 tags:
 - JavaScript
+- 深克隆
+- 面试
+- lodash
 date: 2020-03-20T07:07:15.000+00:00
 title: 从零到一实现一个JS版深克隆
 excerpt: "> 这一类的面试题其实并不是很难，但如果不自己亲自实现一遍，很难照顾到各种情况，本文从模仿lodash库内的cloneDeep函数来循序渐进地实现一个深克隆。"

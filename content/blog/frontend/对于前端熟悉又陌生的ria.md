@@ -2,6 +2,7 @@
 categories: Frontend
 tags:
 - 前端
+- RIA
 date: 2020-02-28T03:09:27.000+08:00
 title: 对于前端熟悉又陌生的RIA
 excerpt: RIA算是一个几年前的概念了，但是目前仍有一些旧的应用还在使用诸如Flash等等过去RIA常用的技术，因此对于前端而言，了解还是很有必要的。

@@ -4,6 +4,8 @@ categories: frontend
 tags:
 - frontend
 - next.js
+- 打包
+- pkg
 title: 使用pkg打包你的Next.js应用
 excerpt: ''
 

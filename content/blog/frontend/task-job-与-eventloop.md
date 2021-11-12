@@ -1,6 +1,9 @@
 ---
 tags:
 - JavaScript
+- 事件循环
+- Event Loop
+- Event
 categories: Frontend
 title: Task, Job 与 EventLoop
 date: 2019-08-20T16:01:00.000+00:00

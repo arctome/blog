@@ -3,6 +3,9 @@ date: 2021-10-08T18:36:07+08:00
 categories: frontend
 tags:
 - frontend
+- Vue.js
+- MathJax
+- 数学公式
 title: Vue项目中使用MathJax
 excerpt: ''
 

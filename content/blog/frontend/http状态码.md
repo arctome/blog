@@ -1,6 +1,8 @@
 ---
 tags:
 - HTTP
+- 状态码
+- HTTP Code
 categories: Frontend
 title: HTTP状态码
 date: 2019-08-20T00:01:00.000+08:00

@@ -1,6 +1,8 @@
 ---
 tags:
 - 前端
+- 语义化
+- HTML
 categories: Frontend
 title: 养成好习惯 - HTML语义化
 date: 2019-08-12T00:03:00.000+08:00

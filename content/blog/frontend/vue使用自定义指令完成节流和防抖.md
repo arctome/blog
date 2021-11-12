@@ -1,6 +1,12 @@
 ---
 tags:
 - Vue.js
+- 防抖
+- 节流
+- 指令
+- Directive
+- throttle
+- debounce
 categories: Frontend
 title: Vue使用自定义指令完成节流和防抖
 date: 2019-08-12T00:00:00.000+08:00

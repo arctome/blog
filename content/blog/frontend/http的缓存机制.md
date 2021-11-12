@@ -1,6 +1,8 @@
 ---
 tags:
 - HTTP
+- Cache
+- 缓存
 categories: Frontend
 title: HTTP的缓存机制
 date: 2019-08-20T00:00:00.000+08:00

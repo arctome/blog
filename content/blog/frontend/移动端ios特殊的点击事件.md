@@ -1,6 +1,8 @@
 ---
 tags:
 - Safari
+- iOS
+- Click Event
 categories: Frontend
 title: 移动端iOS特殊的点击事件
 date: 2019-08-13T00:00:00.000+08:00

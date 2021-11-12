@@ -1,6 +1,7 @@
 ---
 tags:
 - HTML
+- HTML Tag
 categories: Frontend
 title: script标签有几种写法
 date: 2019-08-16T16:05:00.000+00:00

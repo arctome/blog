@@ -1,6 +1,9 @@
 ---
 tags:
 - React.js
+- State
+- Life cycle
+- 生命周期
 categories: Frontend
 title: React 组件中 state 和生命周期
 date: 2019-08-18T16:05:00.000+00:00

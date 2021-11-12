@@ -3,6 +3,7 @@ categories: Frontend
 tags:
 - PWA
 - Safari
+- iOS
 date: 2020-04-14T16:07:03.000+08:00
 title: iOS Safari何时才能更好的支持PWA？
 excerpt: 这篇文章写的其实满气愤的，PWA其实是非常棒的特性，但是在iOS上表现如此之差也难堪重任。

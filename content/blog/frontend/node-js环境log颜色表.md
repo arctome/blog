@@ -1,6 +1,8 @@
 ---
 tags:
 - Node.js
+- log
+- 颜色
 categories: Frontend
 title: Node.js环境log颜色表
 date: 2019-08-12T00:04:00.000+08:00
