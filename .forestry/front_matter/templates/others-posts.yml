@@ -45,6 +45,7 @@ pages:
 - content/blog/others/cloc.md
 - content/blog/others/cloudflare-warp-ipv6-only.md
 - content/blog/others/docker-swarm.md
+- content/blog/others/this-must-be-accepted-explicitly-before-updates-for-this-repository-can-be-applied.md
 - content/blog/others/ufw.md
 - content/blog/others/vim.md
 - content/blog/others/windows10-uefi.md
