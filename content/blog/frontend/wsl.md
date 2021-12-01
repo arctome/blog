@@ -1,5 +1,5 @@
 ---
-date: 2021-09-06T13:43:31+08:00
+date: 2021-09-06T13:43:31.000+08:00
 categories: frontend
 tags:
 - WSL
@@ -31,7 +31,20 @@ Windows Subsystem of Linux, 属于在Windows内加载的旁系统。WSL1与WSL2�
 
 ### WSL快速配置
 
-> 官方安装指南 [Windows Subsystem for Linux Installation Guide for Windows 10](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
+> 官方旧版安装指南 [Windows Subsystem for Linux Installation Guide for Windows 10](https://docs.microsoft.com/en-us/windows/wsl/install-manual)
+
+> 2021-12-01 官方文档更新了，这个步骤不是很清晰，补充几个关键命令……
+
+```powershell
+wsl --install -d Debian # -d <DistributeName>
+# 安装完毕后关闭WSL窗口，直接开始导出
+wsl --export Debian C:\Debian.tar
+wsl --import Debian-WSL1 <SomePathToDir> C:\Debian.tar
+wsl --import Debian-WSL2 <SomePathToDir2> C:\Debian.tar
+wsl --unregister Debian # 删除原来安装的默认版本
+wsl --set-default Debian-WSL1 # 设置WSL1为默认版本
+wsl --set-version Debian-WSL2 2 # 将其中一个版本转换为WSL2
+```
 
 这里我使用 Manual Installation，同时开启WSL2所需的Features，并安装Linux kernel update package。截止至Step4。
 
