@@ -24,8 +24,9 @@ sysctl -p
 
 ### 社区的额外解决方案
 
-1. 阻止43端口
+> [Community](https://forum.proxmox.com/threads/proxmox-claiming-mac-address.52601/page-7)
 
+1. 阻止43端口
 2. 关闭rpc
 
 ```bash
