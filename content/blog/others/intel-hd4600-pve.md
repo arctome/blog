@@ -43,3 +43,7 @@ args: -device vfio-pci,host=00:02.0,x-igd-opregion=on
 如果之前配置了PCI-E设备，请把`hostpci0`所在行注释，不然会导致`device is already attached`错误，无法启动。
 
 至于使用q35 or 默认，以及UEFI or SeaBios都无所谓，我是用的双默认，可以启动。
+
+### 启动之后
+
+的确可以见到启动的GPU，但问题是，一直没有负载，尝试使用Plex media server解码一个视频，发现也还是使用的CPU解码……所以直通暂时还没有结果……
