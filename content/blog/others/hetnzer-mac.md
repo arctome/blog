@@ -7,30 +7,39 @@ title: hetnzer解决mac地址滥用警告
 excerpt: ''
 
 ---
+> 本文最后更新于2021年12月8日
+
 ### Cause
 
 安装Proxmox VE，开通VM，配置网络，ok，大概率会马上收到mac警告。
 
-### Resolve
+### 只使用IPv4 NAT方式
 
 ```bash
-vim /etc/sysctl.conf
-# edit this line to
-# net.ipv4.igmp_link_local_mcast_reports = 0
+echo "net.ipv4.igmp_link_local_mcast_reports = 0" >> /etc/sysctl.conf
 sysctl -p
 ```
 
-然后使用邮件里给的Retry地址，申请官方测试，目前我是收到了问题已解决的邮件，增加了state后，暂无新警告。
+从邮件提交测试，应该能够解决问题。
+
+### IPv4 NAT + IPv6独立方式
+
+由于上述配置只针对IPv4，在我给机器增加IPv6后，果然收到了新的警告，报告的mac地址与新增的IPv6 only网卡一致。
+
+> [Hetzner Doc Link](https://docs.hetzner.com/robot/dedicated-server/faq/error-faq/#mac-errors)
+
+根据文档，在Proxmox VE界面防火墙增加规则，我将43端口的双向TCP全部屏蔽。
+
+再次提交测试，顺利通过。
 
 ### 社区的额外解决方案
 
 > [Community](https://forum.proxmox.com/threads/proxmox-claiming-mac-address.52601/page-7)
 
-1. 阻止43端口
-2. 关闭rpc
+1. 关闭rpc
 
 ```bash
 systemctl disable rpcbind.service rpcbind.socket rpcbind.target
 ```
 
-这两个方案未验证，单独修改这两处的时候，仍然提示Abuse，应该是没用。
+这个方案未验证。
