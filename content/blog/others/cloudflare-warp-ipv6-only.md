@@ -1,6 +1,6 @@
 ---
-date: 2021-05-07T00:57:54+08:00
-categories: otherss
+date: 2021-05-07T00:57:54.000+08:00
+categories: frontend
 tags:
 - others
 - Cloudflare
@@ -26,6 +26,8 @@ sudo apt -t $(lsb_release -sc)-backports install linux-image-$(dpkg --print-arch
 ```bash
 sudo apt install net-tools -y
 sudo apt install wireguard-tools --no-install-recommends
+# If can't find `wiregurad-tools`, execute this and retry
+echo "deb http://deb.debian.org/debian $(lsb_release -sc)-backports main" | sudo tee /etc/apt/sources.list.d/backports.list
 ```
 
 ## STEP 2. 安装第三方工具wgcf
@@ -62,21 +64,19 @@ cp wgcf.conf /etc/wireguard/wgcf.conf
 
 编辑`wgcf.conf`文件，使其与下面的例子相似：
 
-```
-[Interface]
-PrivateKey = YOUR_GENERATED_KEY_HERE
-Address = *.*.*.*/32
-#Address = *:*:*:*:*:*:*:*/128
-DNS = 2001:4860:4860::8888
-MTU = 1280
-PostUp = ip -6 rule add from [ipv6 addr] lookup main
-PostDown = ip -6 rule delete from [ipv6 addr] lookup main
-[Peer]
-PublicKey = YOUR_GENERATED_KEY_HERE
-AllowedIPs = 0.0.0.0/0
-#AllowedIPs = ::/0
-Endpoint = [2606:4700:d0::a29f:c001]:2408
-```
+    [Interface]
+    PrivateKey = YOUR_GENERATED_KEY_HERE
+    Address = *.*.*.*/32
+    #Address = *:*:*:*:*:*:*:*/128
+    DNS = 2001:4860:4860::8888
+    MTU = 1280
+    PostUp = ip -6 rule add from [ipv6 addr] lookup main
+    PostDown = ip -6 rule delete from [ipv6 addr] lookup main
+    [Peer]
+    PublicKey = YOUR_GENERATED_KEY_HERE
+    AllowedIPs = 0.0.0.0/0
+    #AllowedIPs = ::/0
+    Endpoint = [2606:4700:d0::a29f:c001]:2408
 
 > 2001:4860:4860::8888 可以替换为 Google DNS 或 Cloudflare 的IPv6 DNS服务器。
 
@@ -90,11 +90,9 @@ crontab -e
 
 增加以下配置：
 
-```
-@reboot mkdir -p -m0755 /run/sshd
-@reboot systemctl start wg-quick@wgcf # wgcf是配置文件的名称
-@reboot /etc/init.d/ssh start
-```
+    @reboot mkdir -p -m0755 /run/sshd
+    @reboot systemctl start wg-quick@wgcf # wgcf是配置文件的名称
+    @reboot /etc/init.d/ssh start
 
 ## Finish
 
