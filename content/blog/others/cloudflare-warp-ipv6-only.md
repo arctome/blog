@@ -24,7 +24,7 @@ sudo apt -t $(lsb_release -sc)-backports install linux-image-$(dpkg --print-arch
 内核在5+后，执行下列命令，安装Wireguard：
 
 ```bash
-sudo apt install net-tools -y
+sudo apt install net-tools resolvconf -y
 sudo apt install wireguard-tools --no-install-recommends
 # If can't find `wiregurad-tools`, execute this and retry
 echo "deb http://deb.debian.org/debian $(lsb_release -sc)-backports main" | sudo tee /etc/apt/sources.list.d/backports.list
@@ -34,11 +34,24 @@ echo "deb http://deb.debian.org/debian $(lsb_release -sc)-backports main" | sudo
 
 > [wgcf](https://github.com/ViRb3/wgcf) is an unofficial, cross-platform CLI for Cloudflare Warp
 
+### wgcf 自动安装
+
 执行命令，下载wgcf工具：
 
 ```bash
 curl -fsSL git.io/wgcf.sh | sudo bash
 ```
+
+### wgcf 手工安装
+
+> 如果服务器起始状态就没有IPv4，那么访问git.io也是不可能的，我这里提供一个v2.2.10版本的文件给大家临时使用
+
+```
+wget -O /usr/local/bin/wgcf "https://x.arcto.xyz/pg2Edc/wgcf_2.2.10_linux_amd64"
+chmod -x /usr/local/bin/wgcf
+```
+
+### 开始使用
 
 完成后，首先进行注册：
 
