@@ -33,9 +33,9 @@ Google搜索“hetzner mac abuse”关键字，可以说，在Hetzner购买独�
 
 上一个方案属于开玩笑了，想必点进来都是想解决问题的，搜索了所有提及相关关键字的帖子or方案，大致分为几类。
 
-### pfense
+### pfsense
 
-使用pfense将子网网络独立，相对比较复杂，而且，子网内的机器比较依赖中间的中转。参考[链接](https://github.com/pekare/hetzner-proxmox-pfsense)
+使用pfsense将子网网络独立，相对比较复杂，而且，子网内的机器比较依赖中间的中转。参考[链接](https://github.com/pekare/hetzner-proxmox-pfsense)
 
 ### 禁用一些转发（验证不一定成功）
 
