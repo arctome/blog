@@ -42,6 +42,7 @@ fields:
     max: 200
   label: excerpt
 pages:
+- content/blog/frontend/css.md
 - content/blog/frontend/disable.md
 - content/blog/frontend/npm-1.md
 - content/blog/frontend/opensearch.md
