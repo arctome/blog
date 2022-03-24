@@ -28,7 +28,9 @@ const Layout = ({ location, title, currentActive, children }) => {
           name: "viewport",
           content: "width=device-width, height=device-height,  initial-scale=1.0, user-scalable=no;user-scalable=0;"
         }]}
-      ></Helmet>
+      >
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6684222528784162" crossorigin="anonymous"></script>
+      </Helmet>
       <header className="global-header" style={{display: "flex", alignItems: "baseline", justifyContent: "space-between"}}>
         {header}
         <nav>
