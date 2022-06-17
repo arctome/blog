@@ -54,3 +54,6 @@ location /rest-auth/registration { return 403; }
 ```
 
 算是临时解决了，如果之后有更好的方案，我再更新。
+
+> Q: 隐藏了注册相关路由，我该怎么创建新用户呢？
+> A: `docker-compose run migrate ./manage.py createsuperuser`, 参考你的docker-compose.yml里，migrate对应的服务名称。
